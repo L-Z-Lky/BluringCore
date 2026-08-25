@@ -44,10 +44,14 @@ TitleScreen
 
 ## 🛠️ Build from source
 安装 Node.js 环境
-在项目根目录打开 CMD，执行：
-   npm run build
+
+在项目根目录打开 CMD，执行"npm run build"
+
 编译结果在/dist文件夹
 
+
 Install Node.js
+
 Open CMD in the project root and run"npm run build"
+
 The compiled output will be in the /dist folder
