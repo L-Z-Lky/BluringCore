@@ -2,6 +2,7 @@
     import type {GroupedModules, Module} from "../../integration/types";
     import Panel from "./Panel.svelte";
     import Search from "./Search.svelte";
+    import Description from "./Description.svelte";
     import {fade} from "svelte/transition";
     import {onMount} from "svelte";
     import {getModules} from "../../integration/rest";
@@ -23,6 +24,7 @@
 </script>
 
 <div class="clickgui" transition:fade|global={{duration: 200}}>
+    <Description />
     <div class="container">
         <!-- 左侧分类列表 -->
         <div class="left-panel">
@@ -52,16 +54,16 @@
 </div>
 
 <style lang="scss">
-    .clickgui {
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-    }
+.clickgui {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+    backdrop-filter: blur(48px);
+    -webkit-backdrop-filter: blur(24px);
+}
 
     .container {
         display: flex;

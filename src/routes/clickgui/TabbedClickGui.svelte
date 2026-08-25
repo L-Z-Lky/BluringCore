@@ -68,8 +68,8 @@
 </script>
 
 <div
-        class="tabbed-clickgui"
-        class:darken={$darken}
+    class="tabbed-clickgui"
+    class:darken={$darken}
 >
     <Tabs {tabs} bind:activeTab/>
 </div>
@@ -80,9 +80,10 @@
     position: absolute;
     inset: 0;
     transition: ease background-color .2s;
+    background-color: transparent !important;
 
     &.darken {
-      background-color: var(--clickgui-overlay-background-color);
+        background-color: transparent !important;
     }
   }
 </style>

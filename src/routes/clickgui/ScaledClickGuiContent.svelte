@@ -23,7 +23,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    overflow: hidden;
+    overflow: visible;
     transform-origin: top left;
+    background-color: transparent !important;
   }
 </style>
