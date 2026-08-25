@@ -1,7 +1,7 @@
 {
-  "id": "GrowingHUD",
-  "name": "GrowingHUD",
-  "version": "11.45.14",
+  "id": "BlurCore",
+  "name": "BlurCore",
+  "version": "1.1.4",
   "authors": ["L K Y"],
   "colors": {
     "Accent": "#0018ff",
