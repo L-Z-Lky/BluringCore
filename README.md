@@ -40,4 +40,10 @@ The title screen background has also been revamped.
 1. 安装 Node.js 环境
 2. 在项目根目录打开 CMD，执行：
    npm run build
-编译结果在/dist文件夹   
+编译结果在/dist文件夹
+
+Install Node.js
+
+Open CMD in the project root and run"npm run build"
+
+The compiled output will be in the /dist folder
