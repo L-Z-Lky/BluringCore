@@ -1,131 +1,43 @@
-# LiquidBounce Default Theme
+# BluringCore
 
-This repository contains the source code for the LiquidBounce Default Theme, built using [Svelte](https://svelte.dev/). 
-It is intended for development, customization, and distribution through the LiquidBounce theme system and marketplace.
-
----
-
-## Getting Started with a Custom Theme
-
-If you want to create your own LiquidBounce theme, the recommended starting point is to **fork the official default theme repository**:
-
-https://github.com/CCBlueX/LiquidBounce-Theme
-
-Forking this repository gives you a fully working baseline with proper project structure, build configuration, and marketplace integration already set up. From there, you can modify the UI, styles, and components to create your own custom theme while staying compatible with LiquidBounce’s theming system.
+A theme for LiquidBounce (Minecraft Hack Client)
 
 ---
 
-## Development
+正如其名，这个主题的特色是**模糊**，还伴有适得其处的**发光**。
 
-### Prerequisites
+这个主题包去除了标题屏幕上"没用"的东西，将标题屏幕变得更有逻辑性、更易用。
 
-Ensure the following software is installed before proceeding:
+ClickGUI 改变了样式——更加易用，并修复了原有 ClickGUI 的一个 Bug。
 
-- Node.js (latest LTS or stable release recommended)
+还改动了标题屏幕的背景。
 
-### Setup
+---
 
-1. **Install dependencies**
+As the name suggests, the core feature of BluringCore is **blur**, complemented by well-placed **glow** effects.
 
-    ```bash
-    npm install
-    ```
+This theme removes redundant elements from the title screen, making it cleaner, more logical, and easier to use.
 
-2. **Launch LiquidBounce**
+The ClickGUI not only gets a visual overhaul, but also fixes a bug present in the original ClickGUI, making it more stable and responsive.
 
-    Start the LiquidBounce client before running the development server.
+The title screen background has also been revamped.
 
-3. **Start the development server**
+## 📸 Pictures
 
-    ```bash
-    npm run dev
-    ```
+## 📦 Install
 
-4. **Set the theme in the client**
+1. 在游戏内执行 `.client theme browse`
+2. 把 zip 压缩包解压到打开的文件夹里
+3. 确保 `index.html` 在 `themes/BluringCore/` 目录下
+4. 在游戏内执行 `.client theme set BluringCore`
 
-    Use the live development URL provided by the dev server (for example, http://localhost:5173/):
+1. In-game, run `.client theme browse`
+2. Extract the zip archive in the opened folder
+3. Make sure `index.html` is located in `themes/BluringCore/`
+4. In-game, run `.client theme set BluringCore`
 
-    ```
-    .client theme set <live-url>
-    ```
-
-
-5. **Open the theme in a browser**
-
-    Run the following command in the client and select the UI you want to open in your system browser:
-
-    ```
-    .client integration menu
-    ```
-
-### Building for Production
-
-Follow these steps to create a production-ready build of the theme.
-
-1. **Build the theme**
-
-    ```bash
-    npm run build
-    ```
-
-2. **Locate the build output**
-
-    - The production build is generated in the `dist` directory
-
-    - This directory contains the optimized and minified theme files
-
-3. **Deploy to the themes directory**
-
-    - Copy the entire dist directory into your LiquidBounce themes directory
-
-    - You can open the themes directory by running:
-   
-    ```
-    .client theme browse
-    ```
-
-    - Rename the dist folder to your desired theme name
-
-4. **Apply the theme**
-
-    ```
-    .client theme set <your-theme-name>
-    ```
-
-## Marketplace Publishing
-
-To publish the theme to the LiquidBounce Marketplace, complete the following steps.
-
-1. **Generate an API token**
-
-    - Visit: https://liquidbounce.net/account
-
-    - Generate an API token from your account settings
-
-2. **Obtain the marketplace item ID**
-
-    - Navigate to: https://liquidbounce.net/marketplace
-
-    - Open your marketplace item page
-
-    - Copy the value from the Item ID field displayed on the right side
-
-3. **Configure the repository**
-
-    - Add `API_TOKEN` as a repository secret under Settings → Secrets and variables → Actions
-
-    - Update the following values in `.github/workflows/build.yml`:
-
-      - `MARKETPLACE_ITEM_ID`
-
-      - `ZIP_NAME`
-
-4. **Enable publishing**
-
-    - Uncomment the GitHub release and marketplace upload steps in:
-   
-    ```
-    .github/workflows/build.yml
-    ```
-
-Once configured, the workflow will automatically build and publish the theme when triggered.
+## 🛠️ Build from source
+1. 安装 Node.js 环境
+2. 在项目根目录打开 CMD，执行：
+   npm run build
+编译结果在/dist文件夹   
