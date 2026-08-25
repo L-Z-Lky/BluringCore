@@ -1,0 +1,31 @@
+{
+  "name": "ArrayList",
+  "description": "Shows currently enabled modules.",
+  "enabled": true,
+  "singleton": true,
+  "alignment": {
+    "horizontalAlignment": "Left",
+    "horizontalOffset": 0,
+    "verticalAlignment": "Top",
+    "verticalOffset": 15
+  },
+  "values": [
+    {
+      "type": "BOOLEAN",
+      "name": "ShowTags",
+      "value": false
+    },
+    {
+      "type": "CHOOSE",
+      "name": "ItemAlignment",
+      "value": "Left",
+      "choices": ["Left", "Right"]
+    },
+    {
+      "type": "CHOOSE",
+      "name": "Order",
+      "value": "Descending",
+      "choices": ["Ascending", "Descending"]
+    }
+  ]
+}
