@@ -23,6 +23,12 @@ The ClickGUI not only gets a visual overhaul, but also fixes a bug present in th
 The title screen background has also been revamped.
 
 ## 📸 Pictures
+HUD
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/60fe55d3-664f-45dd-978a-56d9062826f9" />
+ClickGUI
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/b17fe7e9-e720-4cfd-90c7-a61dada990c5" />
+TitleScreen
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/486ac43c-0ec8-46ce-bb2f-18f479df3982" />
 
 ## 📦 Install
 
