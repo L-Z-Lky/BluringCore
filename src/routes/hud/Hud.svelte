@@ -1,6 +1,6 @@
 <script lang="ts">
     import ArrayList from "./elements/ArrayList.svelte";
-    import TargetHud from "./elements/TargetHud.svelte";
+    import TargetHud from "./elements/TargetHud/TargetHud.svelte";
     import Watermark from "./elements/Watermark.svelte";
     import Notifications from "./elements/notifications/Notifications.svelte";
     import TabGui from "./elements/tabgui/TabGui.svelte";

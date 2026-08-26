@@ -4,8 +4,8 @@
   "enabled": true,
   "singleton": true,
   "alignment": {
-    "horizontalAlignment": "Right",
-    "horizontalOffset": -150,
+    "horizontalAlignment": "Center",
+    "horizontalOffset": 480,
     "verticalAlignment": "Center",
     "verticalOffset": 0
   },
