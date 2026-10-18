@@ -1,6 +1,6 @@
 <script lang="ts">
     import MainButton from "./buttons/MainButton.svelte";
-    import ConfettiBackground from "./ConfettiBackground.svelte";
+    import FluidBackground from "./FluidBackground.svelte"; // <-- 导入你的新背景
     import IconTextButton from "../common/buttons/IconTextButton.svelte";
     import {
         exitClient,
@@ -29,33 +29,12 @@
 </script>
 
 <div class="title-screen">
-    {#if isAnniversary()}
-        <ConfettiBackground/>
-    {/if}
+    <!-- 把原来的 ConfettiBackground 换成你的流体背景 -->
+    <FluidBackground />
 
     <div class="content">
         <div class="main-buttons">
-            {#if regularButtonsShown}
-                <MainButton title="Singleplayer" icon="singleplayer" index={0}
-                            on:click={() => openScreen("singleplayer")}/>
-
-                <MainButton title="Multiplayer" icon="multiplayer"
-                            on:click={() => openScreen("multiplayer")} index={1}/>
-
-                <MainButton title="Minecraft" icon="options"
-                            on:click={() => openScreen("options")} index={2}/>
-
-                <MainButton title="Hack Options" icon="clickgui"
-                            on:click={() => openScreen("clickgui")} index={3}/>
-
-                <MainButton title="Proxy Manager" icon="proxymanager"
-                            on:click={() => openScreen("proxymanager")} index={4}/>
-            {:else if clientButtonsShown}
-                <MainButton title="Proxy Manager" icon="proxymanager" on:click={() => openScreen("proxymanager")}
-                            index={0}/>
-                <MainButton title="Click GUI" icon="clickgui" on:click={() => openScreen("clickgui")} index={1}/>
-                <MainButton title="Back" icon="back-large" on:click={toggleButtons} index={2}/>
-            {/if}
+            <!-- ... 你原来的按钮代码 ... -->
         </div>
 
         <div class="additional-buttons" transition:fly|global={{duration: 700, y: 100}}>
@@ -71,6 +50,8 @@
         display: flex;
         flex: 1;
         flex-direction: column;
+        /* 建议加一个深色底，防止 WebGL 加载前白屏 */
+        background-color: #050208; 
     }
 
     .content {
@@ -81,6 +62,7 @@
             "b";
         grid-template-rows: 1fr max-content;
         grid-template-columns: 1fr;
+        z-index: 1; /* 确保内容在流体背景之上 */
     }
 
     .main-buttons {
