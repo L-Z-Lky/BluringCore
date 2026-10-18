@@ -15,7 +15,6 @@
     import {listen} from "../../integration/ws";
     import type {HudComponent, Metadata} from "../../integration/types";
     import type {ComponentsUpdateEvent, ScaleFactorChangeEvent} from "../../integration/events";
-    import Keystrokes from "./elements/keystrokes/Keystrokes.svelte";
     import Effects from "./elements/Effects.svelte";
     import BlockCounter from "./elements/BlockCounter.svelte";
     import KeyBinds from "./elements/KeyBinds.svelte";
