@@ -1,10 +1,8 @@
 <script lang="ts">
     import ArrayList from "./elements/ArrayList.svelte";
     import TargetHud from "./elements/TargetHud/TargetHud.svelte";
-    import Watermark from "./elements/Watermark.svelte";
     import Notifications from "./elements/notifications/Notifications.svelte";
     import TabGui from "./elements/tabgui/TabGui.svelte";
-    import HotBar from "./elements/hotbar/HotBar.svelte";
     import Scoreboard from "./elements/Scoreboard.svelte";
     import {onMount, setContext} from "svelte";
     import {
@@ -16,13 +14,10 @@
     } from "../../integration/rest";
     import {listen} from "../../integration/ws";
     import type {HudComponent, Metadata} from "../../integration/types";
-    import Taco from "./elements/taco/Taco.svelte";
     import type {ComponentsUpdateEvent, ScaleFactorChangeEvent} from "../../integration/events";
     import Keystrokes from "./elements/keystrokes/Keystrokes.svelte";
     import Effects from "./elements/Effects.svelte";
     import BlockCounter from "./elements/BlockCounter.svelte";
-    import Text from "./elements/Text.svelte";
-    import DraggableComponent from "./elements/DraggableComponent.svelte";
     import KeyBinds from "./elements/KeyBinds.svelte";
     import ClosedCaptions from "./elements/ClosedCaptions.svelte";
     import GenericPlayerInventory from "./elements/inventory/GenericPlayerInventory.svelte";
@@ -32,7 +27,6 @@
         HUD_EDITOR_ELEMENTS_CONTEXT,
         type HudEditorDragState
     } from "../clickgui/tabs/hud_editor/constants";
-    import Image from "./elements/Image.svelte";
 
     export let inEditor = false;
     export let onDragStateChange: ((state: HudEditorDragState) => void) | undefined = undefined;
